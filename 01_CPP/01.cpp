@@ -1,6 +1,14 @@
 #include<iostream>
 using namespace std;
 
+//function
+    void fun1() {
+        cout<< "The value of x is: " << x <<endl;
+    }
+    int fun2(int x){
+        return x;
+    }
+
 int main() {
     //int age = 10;
     // int -> 4 byte
@@ -55,19 +63,21 @@ int main() {
     // } while(i < 5);
 
     //Hollow Rectangle pattern
-    int r, c;
-    cin>>r>>c;
-    for(int i=0;i<r;i++) {
-        for(int j=0;j<c;j++) {
-            if(i==0 || i==r-1 || j==0 || j==c-1) {
-                cout<<"*";
-            } else {
-                cout<<" ";
-            }
-        }
-        cout<<endl;
-    }
-
-
+    // int r, c;
+    // cin>>r>>c;
+    // for(int i=0;i<r;i++) {
+    //     for(int j=0;j<c;j++) {
+    //         if(i==0 || i==r-1 || j==0 || j==c-1) {
+    //             cout<<"*";
+    //         } else {
+    //             cout<<" ";
+    //         }
+    //     }
+    //     cout<<endl;
+    // }
+    
+    fun1(10);
+    
+    
     return 0;
 }
