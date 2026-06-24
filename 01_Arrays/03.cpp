@@ -13,4 +13,5 @@ https://www.geeksforgeeks.org/problems/second-largest3735/1
 //5. Maximum consecutive one's
 https://www.naukri.com/code360/problems/maximum-consecutive-ones_3843993?leftPanelTabValue=SUBMISSION
 
-
+// 6. Move Zeroes
+https://leetcode.com/problems/move-zeroes/
