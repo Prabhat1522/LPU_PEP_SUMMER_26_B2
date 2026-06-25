@@ -15,3 +15,9 @@ https://www.naukri.com/code360/problems/maximum-consecutive-ones_3843993?leftPan
 
 // 6. Move Zeroes
 https://leetcode.com/problems/move-zeroes/
+
+//7. 167. Two Sum II - Input Array Is Sorted
+https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
+
+// 8 . 121. Best Time to Buy and Sell Stock
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
