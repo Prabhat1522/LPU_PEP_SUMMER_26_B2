@@ -25,5 +25,12 @@ https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 // 9. Triplet Sum in Array
 https://www.geeksforgeeks.org/problems/triplet-sum-in-array-1587115621/1
 
-// 10. 26. Remove Duplicates from Sorted Array
+// 10. 26 Remove Duplicates from Sorted Array
 https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
+// 11. 88 Merge Sorted Array
+https://leetcode.com/problems/merge-sorted-array/
+
+
+// 12. 75. Sort Colors (Sort 0s, 1s and 2s)
+https://leetcode.com/problems/sort-colors/description/
