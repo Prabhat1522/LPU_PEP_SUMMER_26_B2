@@ -38,6 +38,8 @@ https://leetcode.com/problems/sort-colors/description/
 // 13. 34.Find First and Last Position of Element in Sorted Array
 https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 
+// 14. Floor in a Sorted Array
+https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1
 
 
 
