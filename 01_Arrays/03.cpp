@@ -41,5 +41,8 @@ https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-
 // 14. Floor in a Sorted Array
 https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1
 
+// 15. Pair Sum in a Sorted and Rotated Array
+https://www.geeksforgeeks.org/problems/pair-sum-in-a-sorted-and-rotated-array/1
+
 
 
