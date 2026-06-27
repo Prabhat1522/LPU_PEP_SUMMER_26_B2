@@ -45,4 +45,10 @@ https://www.geeksforgeeks.org/problems/floor-in-a-sorted-array-1587115620/1
 https://www.geeksforgeeks.org/problems/pair-sum-in-a-sorted-and-rotated-array/1
 
 
+// saturday ->  Find The Single Element
+https://www.naukri.com/code360/problems/find-the-single-element_6680465?interviewProblemRedirection=true&practice_topic%5B%5D=Binary%20Search&leftPanelTabValue=PROBLEM
+
+
+
+
 
