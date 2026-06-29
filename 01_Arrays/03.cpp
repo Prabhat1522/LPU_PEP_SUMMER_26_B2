@@ -49,6 +49,11 @@ https://www.geeksforgeeks.org/problems/pair-sum-in-a-sorted-and-rotated-array/1
 https://www.naukri.com/code360/problems/find-the-single-element_6680465?interviewProblemRedirection=true&practice_topic%5B%5D=Binary%20Search&leftPanelTabValue=PROBLEM
 
 
+// 16. 53. Maximum Subarray
+https://leetcode.com/problems/maximum-subarray/
+
+
+
 
 
 
