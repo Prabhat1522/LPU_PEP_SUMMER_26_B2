@@ -52,6 +52,11 @@ https://www.naukri.com/code360/problems/find-the-single-element_6680465?intervie
 // 16. 53. Maximum Subarray
 https://leetcode.com/problems/maximum-subarray/
 
+// 17. Reverse array in groups
+https://www.geeksforgeeks.org/problems/reverse-array-in-groups0255/1
+
+
+
 
 
 
