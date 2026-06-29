@@ -61,6 +61,8 @@ https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1
 // 19. 2134. Minimum Swaps to Group All 1's Together II
 https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii/
 
+// 20. 875. Koko Eating Bananas
+https://leetcode.com/problems/koko-eating-bananas/
 
 
 
