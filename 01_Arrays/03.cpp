@@ -55,6 +55,8 @@ https://leetcode.com/problems/maximum-subarray/
 // 17. Reverse array in groups
 https://www.geeksforgeeks.org/problems/reverse-array-in-groups0255/1
 
+// 18. Max Sum Subarray of size K
+https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1
 
 
 
