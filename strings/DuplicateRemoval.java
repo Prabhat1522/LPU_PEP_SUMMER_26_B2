@@ -14,8 +14,6 @@ public class DuplicateRemoval {
     }
     public static void main(String[] args) {
         String str = "geEksforGEeks";
-        System.out.print(removeDuplicates(str));
-        
+        System.out.print(removeDuplicates(str));   
     }
-    
 }

@@ -3,7 +3,7 @@ public class basics {
     public static String reverse(String str, int l, int r) {
         char[] ch = str.toCharArray();
 
-        while(l<r) {
+        while(l < r) {
             char temp = ch[l];
             ch[l]=ch[r];
             ch[r]=temp;
