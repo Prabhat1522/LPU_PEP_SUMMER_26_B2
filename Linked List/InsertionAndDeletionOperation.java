@@ -8,6 +8,8 @@ public class InsertionAndDeletionOperation {
             this.next = null;
         }
     }
+
+    public static Node head = null;
     public static void insertAtEnd(int data) {
         Node newNode = new Node(data);
         if(head == null) {
@@ -56,7 +58,17 @@ public class InsertionAndDeletionOperation {
         }
         temp.next = null;
     }
-    public static void printLL(Node head) {
+    public static void deleteAtBegin() {
+        if(head == null) {
+            System.out.println("Only one Node was present and was deleted");
+            return;
+        }
+        head = head.next;
+    }
+    public static void deleteAtPosition(int pos) {
+        
+    }
+    public static void printLL() {
         Node temp = head;
         while(temp!=null){
             if(temp.next==null ){
@@ -69,42 +81,45 @@ public class InsertionAndDeletionOperation {
         }
     }
 
-    public static Node head = null;
+    
     public static void main(String[] args) {
         insertAtEnd(5);
-        // printLL(head);
-        // System.out.println();
+        printLL();
+        System.out.println();
 
         // insertAtEnd(10);
-        // printLL(head);
+        // printLL();
         // System.out.println();
 
         // insertAtEnd(15);
-        // printLL(head);
+        // printLL();
         // System.out.println();
 
         // insertAtBegin(200);
-        // printLL(head);
+        // printLL();
         // System.out.println();
 
         // insertAtBegin(150);
-        // printLL(head);
+        // printLL();
         // System.out.println();
 
         // insertAtEnd(300);
-        // printLL(head);
+        // printLL();
         // System.out.println();
 
         // inserAtPosition(head, 2, 13);
-        // printLL(head);
+        // printLL();
         // System.out.println();
 
         // inserAtPosition(head, 3, 23);
-        // printLL(head);
+        // printLL();
         // System.out.println();
 
-        deleteAtEnd(head);
-        printLL(head);
+        // deleteAtEnd(head);
+        // printLL();
+
+        deleteAtBegin();
+        printLL();
 
 
 
