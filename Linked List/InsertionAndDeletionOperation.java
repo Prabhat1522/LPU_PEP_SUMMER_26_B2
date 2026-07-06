@@ -31,7 +31,7 @@ public class InsertionAndDeletionOperation {
         newNode.next = head;
         head = newNode;
     }
-    public static void inserAtPosition(Node head, int pos, int data) {
+    public static void insertAtPosition(int pos, int data) {
         Node newNode = new Node(data);
         if(pos == 1) {
             newNode.next = head;
@@ -42,14 +42,21 @@ public class InsertionAndDeletionOperation {
         for(int i=1;i<pos-1 && temp != null;i++) {
             temp = temp.next;
         }
+        if(temp == null) {
+            System.out.println("Invalid Position");
+            return;
+        }
         newNode.next = temp.next;
         temp.next = newNode;
     }
 
-    public static void deleteAtEnd(Node head) {
-        if(head == null || head.next == null) {
+    public static void deleteAtEnd() {
+        if(head == null) {
+            System.out.println("List is Empty");
+            return;
+        }
+        if(head.next == null) {
             head = null;
-            System.out.println("Only one Node was present and was deleted");
             return;
         }
         Node temp = head;
@@ -60,13 +67,29 @@ public class InsertionAndDeletionOperation {
     }
     public static void deleteAtBegin() {
         if(head == null) {
-            System.out.println("Only one Node was present and was deleted");
+            System.out.println("List is Empty");
             return;
         }
         head = head.next;
     }
     public static void deleteAtPosition(int pos) {
-        
+        if(head == null) {
+            System.out.println("List is Empty");
+            return;
+        }
+        if(pos == 1) {
+            head = head.next;
+            return;
+        }
+        Node temp = head;
+        for(int i=1;i<pos-1&&temp.next!=null;i++) {
+            temp = temp.next;
+        }
+        if(temp.next == null){
+            System.out.println("Invalid Position");
+            return;
+        }
+        temp.next = temp.next.next;
     }
     public static void printLL() {
         Node temp = head;
@@ -84,45 +107,35 @@ public class InsertionAndDeletionOperation {
     
     public static void main(String[] args) {
         insertAtEnd(5);
+        insertAtEnd(10);
+        insertAtEnd(15);
+
+        System.out.println("Original List");
         printLL();
-        System.out.println();
 
-        // insertAtEnd(10);
-        // printLL();
-        // System.out.println();
+        System.out.println("\n\nInsert At Beginning");
+        insertAtBegin(200);
+        printLL();
 
-        // insertAtEnd(15);
-        // printLL();
-        // System.out.println();
+        System.out.println("\n\nInsert At End");
+        insertAtEnd(300);
+        printLL();
 
-        // insertAtBegin(200);
-        // printLL();
-        // System.out.println();
+        System.out.println("\n\nInsert At Position (3)");
+        insertAtPosition(3, 100);
+        printLL();
 
-        // insertAtBegin(150);
-        // printLL();
-        // System.out.println();
-
-        // insertAtEnd(300);
-        // printLL();
-        // System.out.println();
-
-        // inserAtPosition(head, 2, 13);
-        // printLL();
-        // System.out.println();
-
-        // inserAtPosition(head, 3, 23);
-        // printLL();
-        // System.out.println();
-
-        // deleteAtEnd(head);
-        // printLL();
-
+        System.out.println("\n\nDelete At Beginning");
         deleteAtBegin();
         printLL();
 
+        System.out.println("\n\nDelete At End");
+        deleteAtEnd();
+        printLL();
 
-
+        System.out.println("\n\nDelete At Position (3)");
+        deleteAtPosition(3);
+        printLL();
 
     }
 }
