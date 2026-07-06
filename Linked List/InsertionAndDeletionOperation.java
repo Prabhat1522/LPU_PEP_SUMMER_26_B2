@@ -1,5 +1,5 @@
 import java.util.*;
-public class basics {
+public class InsertionAndDeletionOperation {
     public static class Node {
         int data;
         Node next;
@@ -37,11 +37,24 @@ public class basics {
             return;
         }
         Node temp = head;
-        for(int i=1;i<pos-1&&temp!=null;i++) {
+        for(int i=1;i<pos-1 && temp != null;i++) {
             temp = temp.next;
         }
         newNode.next = temp.next;
         temp.next = newNode;
+    }
+
+    public static void deleteAtEnd(Node head) {
+        if(head == null || head.next == null) {
+            head = null;
+            System.out.println("Only one Node was present and was deleted");
+            return;
+        }
+        Node temp = head;
+        while(temp.next.next != null) {
+            temp = temp.next;
+        }
+        temp.next = null;
     }
     public static void printLL(Node head) {
         Node temp = head;
@@ -59,36 +72,40 @@ public class basics {
     public static Node head = null;
     public static void main(String[] args) {
         insertAtEnd(5);
-        printLL(head);
-        System.out.println();
+        // printLL(head);
+        // System.out.println();
 
-        insertAtEnd(10);
-        printLL(head);
-        System.out.println();
+        // insertAtEnd(10);
+        // printLL(head);
+        // System.out.println();
 
-        insertAtEnd(15);
-        printLL(head);
-        System.out.println();
+        // insertAtEnd(15);
+        // printLL(head);
+        // System.out.println();
 
-        insertAtBegin(200);
-        printLL(head);
-        System.out.println();
+        // insertAtBegin(200);
+        // printLL(head);
+        // System.out.println();
 
-        insertAtBegin(150);
-        printLL(head);
-        System.out.println();
+        // insertAtBegin(150);
+        // printLL(head);
+        // System.out.println();
 
-        insertAtEnd(300);
-        printLL(head);
-        System.out.println();
+        // insertAtEnd(300);
+        // printLL(head);
+        // System.out.println();
 
-        inserAtPosition(head, 2, 13);
-        printLL(head);
-        System.out.println();
+        // inserAtPosition(head, 2, 13);
+        // printLL(head);
+        // System.out.println();
 
-        inserAtPosition(head, 3, 23);
+        // inserAtPosition(head, 3, 23);
+        // printLL(head);
+        // System.out.println();
+
+        deleteAtEnd(head);
         printLL(head);
-        System.out.println();
+
 
 
 
