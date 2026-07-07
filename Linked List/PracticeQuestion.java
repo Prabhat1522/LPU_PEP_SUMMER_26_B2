@@ -18,7 +18,8 @@ https://www.geeksforgeeks.org/problems/detect-loop-in-linked-list/1
 // 6. 142. Linked List Cycle II
 https://leetcode.com/problems/linked-list-cycle-ii/description/
 
-
+// 7. Remove loop in Linked List
+https://www.geeksforgeeks.org/problems/remove-loop-in-linked-list/1
 
 public class PracticeQuestion {
     public class Node {
