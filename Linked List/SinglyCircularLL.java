@@ -85,8 +85,9 @@ public class SinglyCircularLL {
     public static void deleteAtBegin() {
         if(head == null) {
             System.out.println("List is Empty");
+            return;
         }
-        if(head.next == head) {
+        if(head.next == head) { 
             head = null;
             return;
         }
