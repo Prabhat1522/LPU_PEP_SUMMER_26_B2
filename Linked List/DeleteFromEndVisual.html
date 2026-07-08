@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DSA Visualizer</title>
+<style>
+:root{--bg:#0f1220;--panel:#171b2e;--alt:#1b2038;--border:#2a3050;--text:#e8eaf6;--dim:#9aa0c3;
+--accent:#7c9eff;--accentbg:rgba(124,158,255,.15);--amber:#ffb454;--amberbg:rgba(255,180,84,.18);
+--good:#4ade80;--goodbg:rgba(74,222,128,.16);--mono:ui-monospace,"SF Mono",Consolas,monospace;
+--sans:-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);padding:20px}
+.wrap{max-width:1100px;margin:0 auto}
+h1{font-size:22px;margin:0 0 6px}
+.meta{font-size:12px;color:var(--accent);margin-bottom:8px}
+.statement{color:var(--dim);font-size:13.5px;margin:0 0 6px;max-width:850px}
+.input-line{font-family:var(--mono);font-size:13px;background:var(--alt);border:1px solid var(--border);
+padding:6px 10px;border-radius:6px;display:inline-block}
+.grid{display:grid;grid-template-columns:minmax(260px,400px) 1fr;gap:14px;margin-top:14px}
+@media (max-width:820px){.grid{grid-template-columns:1fr}}
+.panel{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:14px}
+.panel h2{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--dim);margin:0 0 8px}
+.code{font-family:var(--mono);font-size:13px;line-height:1.8;overflow-x:auto}
+.code div{display:flex;gap:10px;padding:0 6px;border-radius:5px;white-space:pre;color:var(--dim);border-left:3px solid transparent}
+.code span.ln{color:#4a5178;min-width:16px;text-align:right}
+.code div.cur{background:var(--accentbg);border-left-color:var(--accent);color:var(--text)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.chip{font-family:var(--mono);font-size:12.5px;background:var(--alt);border:1px solid var(--border);padding:4px 8px;border-radius:6px}
+.chip b{color:var(--accent)}
+.arr{display:flex;gap:6px;flex-wrap:wrap;padding-top:20px;margin-bottom:6px}
+.col{display:flex;flex-direction:column;align-items:center;position:relative}
+.cell{width:42px;height:42px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);
+font-weight:600;background:var(--alt);border:1px solid var(--border);border-radius:7px}
+.cell.active{background:var(--accentbg);border-color:var(--accent)}
+.cell.compare{background:var(--amberbg);border-color:var(--amber)}
+.cell.match{background:var(--goodbg);border-color:var(--good)}
+.cell.eliminated{opacity:.35}
+.cell.visited{opacity:.6}
+.idx{font-size:10px;color:var(--dim);margin-top:3px}
+.ptr{position:absolute;top:-20px;font-size:11px;font-family:var(--mono);font-weight:700;color:var(--accent);
+background:var(--accentbg);padding:0 5px;border-radius:4px;white-space:nowrap}
+.hmap{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.pair{font-family:var(--mono);font-size:12.5px;display:flex;border:1px solid var(--border);border-radius:6px;overflow:hidden}
+.pair span:first-child{background:var(--alt);padding:5px 8px;color:var(--dim)}
+.pair span:last-child{background:var(--accentbg);padding:5px 8px;color:var(--accent);font-weight:600}
+.stack{display:flex;flex-direction:column-reverse;gap:5px;margin-top:8px}
+.stack div{font-family:var(--mono);font-weight:600;background:var(--alt);border:1px solid var(--border);
+padding:6px 14px;border-radius:6px;width:fit-content}
+.narr{margin-top:12px;background:var(--alt);border:1px solid var(--border);border-radius:8px;padding:12px 14px;font-size:14px;line-height:1.5}
+.result{margin-top:10px;padding:10px 14px;border-radius:8px;background:var(--goodbg);border:1px solid var(--good);
+color:var(--good);font-family:var(--mono);font-weight:700;display:none}
+.result.show{display:block}
+.ctrl{margin-top:14px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--panel);
+border:1px solid var(--border);border-radius:10px;padding:12px 14px}
+button{font-family:var(--sans);font-size:13px;font-weight:600;cursor:pointer;background:var(--alt);color:var(--text);
+border:1px solid var(--border);padding:7px 12px;border-radius:7px}
+button:disabled{opacity:.35;cursor:not-allowed}
+button.primary{background:var(--accentbg);border-color:var(--accent);color:var(--accent)}
+.count{font-family:var(--mono);font-size:12.5px;color:var(--dim);min-width:80px;text-align:center}
+input[type=range]{flex:1;min-width:140px;accent-color:var(--accent)}
+input[type=number]{width:64px;font-family:var(--mono);background:var(--alt);border:1px solid var(--border);
+color:var(--text);border-radius:5px;padding:5px 6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1 id="p-title">Title</h1>
+<div class="meta" id="p-meta">Pattern · Difficulty</div>
+<p class="statement" id="p-statement">Statement.</p>
+<div class="input-line" id="p-input">Input: ...</div>
+
+<div class="grid">
+  <div class="panel code" id="code"></div>
+  <div class="panel">
+    <h2>State</h2>
+    <div class="chips" id="vars"></div>
+    <div class="arr" id="arr"></div>
+    <div class="hmap" id="hmap"></div>
+    <div class="stack" id="stack"></div>
+    <div class="narr" id="narr"></div>
+    <div class="result" id="result"></div>
+  </div>
+</div>
+
+<div class="ctrl">
+  <button id="reset">Reset</button>
+  <button id="prev">◀ Prev</button>
+  <button id="play" class="primary">▶ Play</button>
+  <button id="next">Next ▶</button>
+  <span class="count" id="count">1 / 1</span>
+  <input type="range" id="slider" min="0" max="0" value="0" step="1">
+  <input type="number" id="speed" min="200" max="5000" step="100" value="1200" title="speed ms">
+</div>
+</div>
+
+<script>
+// ---- fill this block in per problem ----
+const problem = {
+  title: "19. Remove Nth Node From End of List",
+  pattern: "Two Pointers (fast/slow) on a Linked List, with a dummy sentinel node",
+  difficulty: "Medium",
+  statement: "Remove the nth node from the end of the list and return the new head, in one pass.",
+  input: "head = [1,2,3,4,5], n = 2",
+  code: [
+    "struct ListNode {",
+    "    int val;",
+    "    ListNode* next;",
+    "    ListNode(int x) : val(x), next(nullptr) {}",
+    "};",
+    "",
+    "class Solution {",
+    "public:",
+    "    ListNode* removeNthFromEnd(ListNode* head, int n) {",
+    "        ListNode* dummy = new ListNode(0);",
+    "        dummy->next = head;",
+    "        ListNode* fast = dummy;",
+    "        ListNode* slow = dummy;",
+    "        for (int i = 0; i < n; i++) {",
+    "            fast = fast->next;",
+    "        }",
+    "        while (fast->next != nullptr) {",
+    "            fast = fast->next;",
+    "            slow = slow->next;",
+    "        }",
+    "        slow->next = slow->next->next;",
+    "        return dummy->next;",
+    "    }",
+    "};"
+  ]
+};
+// one full snapshot per meaningful step (no carry-over)
+const steps = [
+  { line:8, narration:"We have the list 1 -> 2 -> 3 -> 4 -> 5 and need to remove the 2nd node from the end (node 4), in a single pass.",
+    vars:{n:2}, array:["D",1,2,3,4,5], pointers:{}, highlight:{}, hashmap:null, stack:null, result:null },
+
+  { line:9, narration:"Create a dummy node in front of head. This lets us handle the case where the head itself gets removed, without special-casing it.",
+    vars:{n:2}, array:["D",1,2,3,4,5], pointers:{dummy:0}, highlight:{0:'active'}, hashmap:null, stack:null, result:null },
+
+  { line:10, narration:"dummy->next is set to head, so dummy now sits right before node 1.",
+    vars:{n:2}, array:["D",1,2,3,4,5], pointers:{dummy:0}, highlight:{0:'active',1:'compare'}, hashmap:null, stack:null, result:null },
+
+  { line:11, narration:"fast starts at dummy.",
+    vars:{n:2}, array:["D",1,2,3,4,5], pointers:{dummy:0,fast:0}, highlight:{0:'active'}, hashmap:null, stack:null, result:null },
+
+  { line:12, narration:"slow also starts at dummy. Both pointers begin together, at the same spot.",
+    vars:{n:2}, array:["D",1,2,3,4,5], pointers:{dummy:0,fast:0,slow:0}, highlight:{0:'active'}, hashmap:null, stack:null, result:null },
+
+  { line:14, narration:"Advance fast one step (1 of 2), to build an n-node gap between fast and slow.",
+    vars:{n:2,i:0}, array:["D",1,2,3,4,5], pointers:{fast:1,slow:0}, highlight:{1:'active'}, hashmap:null, stack:null, result:null },
+
+  { line:14, narration:"Advance fast again (2 of 2). fast is now exactly n=2 nodes ahead of slow -- that gap stays fixed from here on.",
+    vars:{n:2,i:1}, array:["D",1,2,3,4,5], pointers:{fast:2,slow:0}, highlight:{2:'active'}, hashmap:null, stack:null, result:null },
+
+  { line:16, narration:"Check fast->next: node 3 exists, so we're not at the end yet. Keep moving both pointers together.",
+    vars:{n:2}, array:["D",1,2,3,4,5], pointers:{fast:2,slow:0}, highlight:{2:'compare'}, hashmap:null, stack:null, result:null },
+
+  { line:18, narration:"Move fast and slow one step each: fast -> node 3, slow -> node 1. The n-node gap is preserved.",
+    vars:{n:2}, array:["D",1,2,3,4,5], pointers:{fast:3,slow:1}, highlight:{3:'active',1:'active'}, hashmap:null, stack:null, result:null },
+
+  { line:16, narration:"Check fast->next: node 4 exists, so continue advancing both pointers.",
+    vars:{n:2}, array:["D",1,2,3,4,5], pointers:{fast:3,slow:1}, highlight:{3:'compare'}, hashmap:null, stack:null, result:null },
+
+  { line:18, narration:"Move both again: fast -> node 4, slow -> node 2.",
+    vars:{n:2}, array:["D",1,2,3,4,5], pointers:{fast:4,slow:2}, highlight:{4:'active',2:'active'}, hashmap:null, stack:null, result:null },
+
+  { line:16, narration:"Check fast->next: node 5 exists, so continue once more.",
+    vars:{n:2}, array:["D",1,2,3,4,5], pointers:{fast:4,slow:2}, highlight:{4:'compare'}, hashmap:null, stack:null, result:null },
+
+  { line:18, narration:"Move both again: fast -> node 5, slow -> node 3.",
+    vars:{n:2}, array:["D",1,2,3,4,5], pointers:{fast:5,slow:3}, highlight:{5:'active',3:'active'}, hashmap:null, stack:null, result:null },
+
+  { line:16, narration:"Check fast->next: fast is at node 5, the last node, and its next is nullptr. The loop stops here.",
+    vars:{n:2}, array:["D",1,2,3,4,5], pointers:{fast:5,slow:3}, highlight:{5:'active',3:'active',4:'compare'}, hashmap:null, stack:null, result:null },
+
+  { line:20, narration:"slow->next = slow->next->next skips right over node 4, unlinking it from the list. slow (node 3) now points directly to node 5.",
+    vars:{n:2}, array:["D",1,2,3,4,5], pointers:{fast:5,slow:3}, highlight:{4:'eliminated',3:'active',5:'active'}, hashmap:null, stack:null, result:null },
+
+  { line:21, narration:"Return dummy->next as the new head. Since we removed a middle node, the head itself (node 1) is unchanged. Final list: 1 -> 2 -> 3 -> 5.",
+    vars:{n:2}, array:["D",1,2,3,4,5], pointers:{}, highlight:{4:'eliminated'}, hashmap:null, stack:null, result:"[1, 2, 3, 5]" }
+];
+// -----------------------------------------
+
+let i=0, playing=false, timer=null;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+function initHeader(){
+  $('p-title').textContent=problem.title;
+  $('p-meta').textContent=problem.pattern+' · '+problem.difficulty;
+  $('p-statement').textContent=problem.statement;
+  $('p-input').textContent=problem.input;
+  $('code').innerHTML='<h2>Code</h2>'+problem.code.map((l,n)=>
+    `<div data-l="${n}"><span class="ln">${n+1}</span><span>${esc(l)}</span></div>`).join('');
+}
+
+function render(){
+  const s=steps[i];
+  $('code').querySelectorAll('div[data-l]').forEach(d=>d.classList.toggle('cur',Number(d.dataset.l)===s.line));
+  const cur=$('code').querySelector('.cur');
+  if(cur&&cur.scrollIntoView) cur.scrollIntoView({block:'nearest'});
+
+  const vars=s.vars||{};
+  $('vars').innerHTML=Object.keys(vars).map(k=>`<span class="chip"><b>${esc(k)}</b>=${esc(vars[k])}</span>`).join('');
+
+  const arr=s.array||[], hl=s.highlight||{}, ptrs=s.pointers||{};
+  const byIdx={};
+  Object.keys(ptrs).forEach(n=>{(byIdx[ptrs[n]]=byIdx[ptrs[n]]||[]).push(n)});
+  $('arr').innerHTML=arr.map((v,idx)=>{
+    const cls=hl[idx]?' '+hl[idx]:'';
+    const labels=(byIdx[idx]||[]).map(n=>`<span class="ptr">${esc(n)}</span>`).join('');
+    return `<div class="col">${labels}<div class="cell${cls}">${esc(v)}</div><div class="idx">${idx}</div></div>`;
+  }).join('');
+
+  if(s.hashmap!==null&&s.hashmap!==undefined){
+    const keys=Object.keys(s.hashmap);
+    $('hmap').innerHTML=keys.length?keys.map(k=>`<div class="pair"><span>${esc(k)}</span><span>${esc(s.hashmap[k])}</span></div>`).join(''):'<span class="chip">empty</span>';
+  } else $('hmap').innerHTML='';
+
+  $('stack').innerHTML=(s.stack&&s.stack.length)?s.stack.map(v=>`<div>${esc(v)}</div>`).join(''):'';
+  $('narr').textContent=s.narration||'';
+
+  if(s.result!==null&&s.result!==undefined){$('result').textContent='Result: '+s.result;$('result').classList.add('show')}
+  else $('result').classList.remove('show');
+
+  $('count').textContent=(i+1)+' / '+steps.length;
+  $('slider').value=i;
+  $('prev').disabled=i===0;
+  $('next').disabled=i===steps.length-1;
+  if(i===steps.length-1&&playing) pause();
+}
+
+function goTo(n){i=Math.max(0,Math.min(steps.length-1,n));render()}
+function next(){if(i<steps.length-1) goTo(i+1)}
+function prev(){if(i>0) goTo(i-1)}
+function play(){if(i===steps.length-1) i=0; playing=true; $('play').textContent='⏸ Pause'; tick()}
+function tick(){clearTimeout(timer); timer=setTimeout(()=>{if(!playing) return; if(i<steps.length-1){next();tick()}else pause()}, Number($('speed').value)||1200)}
+function pause(){playing=false; $('play').textContent='▶ Play'; clearTimeout(timer)}
+
+$('next').onclick=()=>{pause();next()};
+$('prev').onclick=()=>{pause();prev()};
+$('play').onclick=()=>playing?pause():play();
+$('reset').onclick=()=>{pause();goTo(0)};
+$('slider').oninput=e=>{pause();goTo(Number(e.target.value))};
+
+initHeader();
+$('slider').max=steps.length-1;
+render();
+</script>
+</body>
+</html>

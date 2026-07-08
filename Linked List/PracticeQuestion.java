@@ -21,6 +21,23 @@ https://leetcode.com/problems/linked-list-cycle-ii/description/
 // 7. Remove loop in Linked List
 https://www.geeksforgeeks.org/problems/remove-loop-in-linked-list/1
 
+// 8. 328. Odd Even Linked List
+https://leetcode.com/problems/odd-even-linked-list/description/
+
+// 9. 19. Remove Nth Node From End of List
+https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
+
+// 10. Kth from End of Linked List
+https://www.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1
+
+// 11. 86. Partition List
+https://leetcode.com/problems/partition-list/description/
+
+// 12. Sort a linked list of 0s, 1s and 2s
+https://www.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1
+
+
+
 public class PracticeQuestion {
     public class Node {
         int data;
