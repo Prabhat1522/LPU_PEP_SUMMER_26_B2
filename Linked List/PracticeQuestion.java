@@ -36,6 +36,14 @@ https://leetcode.com/problems/partition-list/description/
 // 12. Sort a linked list of 0s, 1s and 2s
 https://www.geeksforgeeks.org/problems/given-a-linked-list-of-0s-1s-and-2s-sort-it/1
 
+// 13. Reverse List In K Groups
+https://www.naukri.com/code360/problems/reverse-list-in-k-groups_983644
+
+// 14. 146. LRU Cache
+https://leetcode.com/problems/lru-cache/description/
+
+
+
 
 
 public class PracticeQuestion {
