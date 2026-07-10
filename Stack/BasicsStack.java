@@ -1,3 +1,4 @@
+import java.util.*;
 class BasicsStack {
     public static class MyStack {
         int[] arr;
@@ -15,7 +16,7 @@ class BasicsStack {
             }
             top++;
             arr[top] = val;
-        }
+        } 
         int pop() {
             if(top == -1) {
                 System.out.println("Stack Underflow");
@@ -46,20 +47,26 @@ class BasicsStack {
         }
     }
     public static void main(String args[]) {
+        Stack<Integer> st = new Stack<>();
         
-        MyStack s1 = new MyStack(5);
-        s1.push(10);
-        s1.push(20);
-        s1.push(30);
+        // MyStack s1 = new MyStack(5);
+        // s1.push(10);
+        // s1.push(20);
+        // s1.push(30);
 
-        s1.display();
+        // s1.display();
 
-        System.out.println(s1.pop());   // 30
+        // System.out.println(s1.pop());   // 30
 
-        s1.display();      // 20 10
+        // s1.display();      // 20 10
 
-         System.out.println(s1.peek());  // 20
+        //  System.out.println(s1.peek());  // 20
+        st.push(10);
+        st.push(200);
+        st.push(30);
+        while(st.size()>0) {
+            System.out.print(st.pop()+" ");
+        }
 
-        
     }    
 }
