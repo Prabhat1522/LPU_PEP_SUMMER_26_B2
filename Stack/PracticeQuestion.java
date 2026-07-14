@@ -13,6 +13,8 @@ https://leetcode.com/problems/min-stack/description/
 // 5. 225. Implement Stack using Queues
 https://leetcode.com/problems/implement-stack-using-queues/description/
 
+// 6. Delete Mid of a Stack
+https://www.geeksforgeeks.org/problems/delete-middle-element-of-a-stack/1
 
 public class PracticeQuestion {
     public static void main(String args[]) {
