@@ -16,6 +16,10 @@ https://leetcode.com/problems/implement-stack-using-queues/description/
 // 6. Delete Mid of a Stack
 https://www.geeksforgeeks.org/problems/delete-middle-element-of-a-stack/1
 
+// 7. Interleave the First Half of the Queue with Second Half
+https://www.geeksforgeeks.org/problems/interleave-the-first-half-of-the-queue-with-second-half/1
+
+
 public class PracticeQuestion {
     public static void main(String args[]) {
         
