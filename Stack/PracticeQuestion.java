@@ -10,6 +10,9 @@ https://www.geeksforgeeks.org/problems/queue-reversal/1
 // 4. 155. Min Stack
 https://leetcode.com/problems/min-stack/description/
 
+// 5. 225. Implement Stack using Queues
+https://leetcode.com/problems/implement-stack-using-queues/description/
+
 
 public class PracticeQuestion {
     public static void main(String args[]) {
