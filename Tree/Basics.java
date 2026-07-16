@@ -27,7 +27,15 @@ public class Basics {
         Postorder(root.right);
         System.out.print(root.data+" ");
     }
-        
+
+    static int countNodes(Node root) {
+        if(root == null) return 0;
+        int lc = countNodes(root.left);
+        int rc = countNodes(root.right);
+        return lc + rc + 1;
+    }
+    
+
     public static void main(String[] args) {
         Node root = new Node(10);
         root.left = new Node(20);
@@ -50,6 +58,12 @@ public class Basics {
 
         System.out.print("Postorder: ");
         Postorder(root);
+
+        System.out.println();
+
+        System.out.print("Number of Nodes: ");
+        System.out.print(countNodes(root));
+        
 
         
     }
