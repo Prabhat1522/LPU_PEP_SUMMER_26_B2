@@ -1,3 +1,5 @@
+import javax.swing.tree.TreeNode;
+
 public class Basics {
     static class Node{
         int data;
@@ -27,7 +29,6 @@ public class Basics {
         Postorder(root.right);
         System.out.print(root.data+" ");
     }
-
     static int countNodes(Node root) {
         if(root == null) return 0;
         int lc = countNodes(root.left);
@@ -46,6 +47,23 @@ public class Basics {
         int lh = height(root.left);
         int rh = height(root.right);
         return 1+Math.max(lh,rh);
+    }
+    static int sumOfNodes(Node root) {
+        if(root == null) return 0;
+        int ls = sumOfNodes(root.left);
+        int rs = sumOfNodes(root.right);
+        return root.data + ls + rs;
+    }
+
+    static int sumOfLeftLeaves(Node root) {
+        if(root == null) return 0;
+        int sum = 0;
+        if(root.left != null && root.left.left == null && root.left.right == null) {
+            sum += root.left.data;
+        }
+        sum += sumOfLeftLeaves(root.left);
+        sum += sumOfLeftLeaves(root.right);
+        return sum;
     }
 
     public static void main(String[] args) {
@@ -85,7 +103,14 @@ public class Basics {
 
         System.out.print("Height of Tree: ");
         System.out.print(height(root));
-        
+
+        System.out.println();
+        System.out.print("Sum  of all Nodes: ");
+        System.out.print(sumOfNodes(root));
+
+        System.out.println();
+        System.out.print("Sum  of left leaves: ");
+        System.out.print(sumOfLeftLeaves(root));
 
         
     }
