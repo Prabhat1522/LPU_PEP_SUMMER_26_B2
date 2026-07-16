@@ -41,6 +41,12 @@ public class Basics {
         int rl = countLeafNodes(root.right);
         return ll + rl;
     }
+    static int height(Node root) {
+        if(root == null) return -1;
+        int lh = height(root.left);
+        int rh = height(root.right);
+        return 1+Math.max(lh,rh);
+    }
 
     public static void main(String[] args) {
         Node root = new Node(10);
@@ -71,9 +77,14 @@ public class Basics {
         System.out.print(countNodes(root));
 
         System.out.println();
-        
+
         System.out.print("Number of Leaf Nodes: ");
         System.out.print(countLeafNodes(root));
+
+        System.out.println();
+
+        System.out.print("Height of Tree: ");
+        System.out.print(height(root));
         
 
         
