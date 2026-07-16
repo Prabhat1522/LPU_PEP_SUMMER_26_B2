@@ -34,7 +34,13 @@ public class Basics {
         int rc = countNodes(root.right);
         return lc + rc + 1;
     }
-    
+    static int countLeafNodes(Node root) {
+        if(root == null) return 0;
+        if(root.left==null && root.right == null) return 1;
+        int ll = countLeafNodes(root.left);
+        int rl = countLeafNodes(root.right);
+        return ll + rl;
+    }
 
     public static void main(String[] args) {
         Node root = new Node(10);
@@ -63,6 +69,11 @@ public class Basics {
 
         System.out.print("Number of Nodes: ");
         System.out.print(countNodes(root));
+
+        System.out.println();
+        
+        System.out.print("Number of Leaf Nodes: ");
+        System.out.print(countLeafNodes(root));
         
 
         
