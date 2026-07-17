@@ -1,0 +1,40 @@
+
+// 1 . Inorder Traversal
+https://www.naukri.com/code360/problems/inorder-traversal_3839605?leftPanelTabValue=SUBMISSION
+https://www.geeksforgeeks.org/problems/inorder-traversal/1
+https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+
+// 2 . PreOrder Traversal
+https://leetcode.com/problems/binary-tree-preorder-traversal/description/
+https://www.geeksforgeeks.org/problems/preorder-traversal/1
+https://www.naukri.com/code360/problems/preorder-traversal_2035934
+
+// 3 . PostOrder Traversal
+https://leetcode.com/problems/binary-tree-postorder-traversal/description/
+https://www.geeksforgeeks.org/problems/postorder-traversal/1
+
+// 4 . count the nodes in binary tree
+https://leetcode.com/problems/count-complete-tree-nodes/description/
+https://www.geeksforgeeks.org/problems/count-number-of-nodes-in-a-binary-tree/1
+https://www.naukri.com/code360/problems/count-complete-binary-tree-nodes_982774
+
+// 5 . Count the leaf nodes 
+https://www.naukri.com/code360/problems/count-leaf-nodes_893055
+
+
+//6. Height of Binary tree
+https://www.geeksforgeeks.org/problems/height-of-binary-tree/1
+
+// 7. Sum of nodes
+https://www.geeksforgeeks.org/problems/sum-of-binary-tree/1
+https://www.naukri.com/code360/problems/maximum-sum-of-nodes-in-a-binary-tree-such-that-no-two-nodes-are-adjacent_1118112
+
+//8. sum of left leaf
+https://leetcode.com/problems/sum-of-left-leaves/description/
+https://www.geeksforgeeks.org/problems/sum-of-left-leaf-nodes/1
+https://www.naukri.com/code360/problems/find-the-sum-of-the-left-leaves_1376446
+
+// 9 leectcode-100 - Same Tree
+https://leetcode.com/problems/same-tree/description/
+
+
