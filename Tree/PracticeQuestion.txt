@@ -58,3 +58,9 @@ https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 
 // 15 . Nodes at K Distance from Root
 https://www.geeksforgeeks.org/problems/k-distance-from-root/1
+
+
+// 16. Tree Boundary Traversal
+https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1
+https://www.naukri.com/code360/problems/boundary-traversal-of-binary-tree_790725
+
