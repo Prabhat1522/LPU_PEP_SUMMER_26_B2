@@ -64,3 +64,5 @@ https://www.geeksforgeeks.org/problems/k-distance-from-root/1
 https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1
 https://www.naukri.com/code360/problems/boundary-traversal-of-binary-tree_790725
 
+// 17 . Top View of Binary Tree
+https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1
