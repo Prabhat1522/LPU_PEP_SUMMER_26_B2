@@ -50,6 +50,9 @@ https://www.geeksforgeeks.org/problems/right-view-of-binary-tree/1
 https://leetcode.com/problems/range-sum-of-bst/description/
 
 
+// 13. 700. Search in a Binary Search Tree
+https://leetcode.com/problems/search-in-a-binary-search-tree/
+
 
 
 
