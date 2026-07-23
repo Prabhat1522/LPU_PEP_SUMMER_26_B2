@@ -1,4 +1,3 @@
-import javax.swing.tree.TreeNode;
 
 public class Basics {
     static class Node{
@@ -112,7 +111,6 @@ public class Basics {
         System.out.print("Sum  of left leaves: ");
         System.out.print(sumOfLeftLeaves(root));
 
-        
     }
 
 }
