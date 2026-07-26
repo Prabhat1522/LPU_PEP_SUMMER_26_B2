@@ -66,3 +66,44 @@ https://www.naukri.com/code360/problems/boundary-traversal-of-binary-tree_790725
 
 // 17 . Top View of Binary Tree
 https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1
+
+// 18 . 108. Convert Sorted Array to Binary Search Tree
+https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/
+
+// 19 . 701. Insert into a Binary Search Tree
+https://leetcode.com/problems/insert-into-a-binary-search-tree/submissions/2074401918/
+
+// 20 . 653. Two Sum IV - Input is a BST
+https://leetcode.com/problems/two-sum-iv-input-is-a-bst/description/
+
+// 21 . 230. Kth Smallest Element in a BST
+https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
+https://www.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1
+
+// 22 . 98. Validate Binary Search Tree
+https://leetcode.com/problems/validate-binary-search-tree/description/
+
+// 23 . Predecessor and Successor
+https://www.geeksforgeeks.org/problems/predecessor-and-successor/1
+
+// 24 . 450. Delete Node in a BST
+https://leetcode.com/problems/delete-node-in-a-bst/description/
+
+
+
+
+//Extra-> 1. Symmertic Tree
+https://leetcode.com/problems/symmetric-tree/description/
+
+//Extra-> 2. Invert Tree 
+https://leetcode.com/problems/invert-binary-tree/submissions/2077538983/
+
+//Extra-> 3. LCA
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/submissions/2077930976/
+
+//Extra-> 4. 700. Search in a Binary Search Tree
+https://leetcode.com/problems/search-in-a-binary-search-tree/description/
+
+//Extra-> 5. 235. Lowest Common Ancestor of a Binary Search Tree
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/
+
