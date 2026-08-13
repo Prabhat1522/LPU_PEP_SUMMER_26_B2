@@ -9,10 +9,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0112-path-sum](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0112-path-sum) |
+| [0129-sum-root-to-leaf-numbers](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0129-sum-root-to-leaf-numbers) |
 ## Depth-First Search
 |  |
 | ------- |
 | [0112-path-sum](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0112-path-sum) |
+| [0129-sum-root-to-leaf-numbers](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0129-sum-root-to-leaf-numbers) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -21,4 +23,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0112-path-sum](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0112-path-sum) |
+| [0129-sum-root-to-leaf-numbers](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0129-sum-root-to-leaf-numbers) |
 <!---LeetCode Topics End-->
