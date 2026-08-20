@@ -48,4 +48,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0098-validate-binary-search-tree) |
+## Array
+|  |
+| ------- |
+| [3069-distribute-elements-into-two-arrays-i](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3069-distribute-elements-into-two-arrays-i) |
+## Simulation
+|  |
+| ------- |
+| [3069-distribute-elements-into-two-arrays-i](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3069-distribute-elements-into-two-arrays-i) |
 <!---LeetCode Topics End-->
