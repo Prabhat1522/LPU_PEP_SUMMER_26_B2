@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0083-remove-duplicates-from-sorted-list) |
 | [0092-reverse-linked-list-ii](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0092-reverse-linked-list-ii) |
+| [0203-remove-linked-list-elements](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0203-remove-linked-list-elements) |
 ## Tree
 |  |
 | ------- |
@@ -57,4 +58,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3069-distribute-elements-into-two-arrays-i) |
+## Recursion
+|  |
+| ------- |
+| [0203-remove-linked-list-elements](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0203-remove-linked-list-elements) |
 <!---LeetCode Topics End-->
