@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Linked List
 |  |
 | ------- |
+| [0083-remove-duplicates-from-sorted-list](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0083-remove-duplicates-from-sorted-list) |
 | [0092-reverse-linked-list-ii](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0092-reverse-linked-list-ii) |
 ## Tree
 |  |
