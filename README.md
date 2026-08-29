@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0083-remove-duplicates-from-sorted-list) |
 | [0092-reverse-linked-list-ii](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0092-reverse-linked-list-ii) |
+| [0143-reorder-list](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0143-reorder-list) |
 | [0203-remove-linked-list-elements](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0203-remove-linked-list-elements) |
 ## Tree
 |  |
@@ -62,9 +63,18 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Recursion
 |  |
 | ------- |
+| [0143-reorder-list](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0143-reorder-list) |
 | [0203-remove-linked-list-elements](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0203-remove-linked-list-elements) |
 ## Hash Table
 |  |
 | ------- |
 | [3718-smallest-missing-multiple-of-k](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3718-smallest-missing-multiple-of-k) |
+## Two Pointers
+|  |
+| ------- |
+| [0143-reorder-list](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0143-reorder-list) |
+## Stack
+|  |
+| ------- |
+| [0143-reorder-list](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0143-reorder-list) |
 <!---LeetCode Topics End-->
