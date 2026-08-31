@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0092-reverse-linked-list-ii](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0092-reverse-linked-list-ii) |
 | [0143-reorder-list](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0143-reorder-list) |
 | [0203-remove-linked-list-elements](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0203-remove-linked-list-elements) |
+| [2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 ## Tree
 |  |
 | ------- |
