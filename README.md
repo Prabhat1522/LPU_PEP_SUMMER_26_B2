@@ -85,4 +85,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [3875-construct-uniform-parity-array-i](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3875-construct-uniform-parity-array-i) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3876-construct-uniform-parity-array-ii) |
+## Database
+|  |
+| ------- |
+| [1757-recyclable-and-low-fat-products](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1757-recyclable-and-low-fat-products) |
 <!---LeetCode Topics End-->
