@@ -55,6 +55,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [1480-running-sum-of-1d-array](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1480-running-sum-of-1d-array) |
 | [1929-concatenation-of-array](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1929-concatenation-of-array) |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3069-distribute-elements-into-two-arrays-i) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3718-smallest-missing-multiple-of-k) |
@@ -92,4 +93,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0584-find-customer-referee](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0584-find-customer-referee) |
 | [1757-recyclable-and-low-fat-products](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1757-recyclable-and-low-fat-products) |
+## Prefix Sum
+|  |
+| ------- |
+| [1480-running-sum-of-1d-array](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1480-running-sum-of-1d-array) |
 <!---LeetCode Topics End-->
