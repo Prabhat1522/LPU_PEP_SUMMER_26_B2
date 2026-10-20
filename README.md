@@ -64,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0412-fizz-buzz](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0412-fizz-buzz) |
 | [1929-concatenation-of-array](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1929-concatenation-of-array) |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3069-distribute-elements-into-two-arrays-i) |
 ## Recursion
@@ -86,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0412-fizz-buzz](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0412-fizz-buzz) |
 | [3875-construct-uniform-parity-array-i](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3875-construct-uniform-parity-array-i) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3876-construct-uniform-parity-array-ii) |
 ## Database
@@ -97,4 +99,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1480-running-sum-of-1d-array](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1480-running-sum-of-1d-array) |
+## String
+|  |
+| ------- |
+| [0412-fizz-buzz](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0412-fizz-buzz) |
 <!---LeetCode Topics End-->
