@@ -55,6 +55,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0088-merge-sorted-array) |
 | [1480-running-sum-of-1d-array](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1480-running-sum-of-1d-array) |
 | [1672-richest-customer-wealth](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1672-richest-customer-wealth) |
 | [1929-concatenation-of-array](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1929-concatenation-of-array) |
@@ -80,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0088-merge-sorted-array) |
 | [0143-reorder-list](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0143-reorder-list) |
 ## Stack
 |  |
@@ -113,4 +115,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1672-richest-customer-wealth](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1672-richest-customer-wealth) |
+## Sorting
+|  |
+| ------- |
+| [0088-merge-sorted-array](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0088-merge-sorted-array) |
 <!---LeetCode Topics End-->
