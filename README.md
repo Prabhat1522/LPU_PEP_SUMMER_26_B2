@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0088-merge-sorted-array) |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [1480-running-sum-of-1d-array](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1480-running-sum-of-1d-array) |
 | [1672-richest-customer-wealth](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1672-richest-customer-wealth) |
 | [1929-concatenation-of-array](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1929-concatenation-of-array) |
@@ -91,6 +92,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0412-fizz-buzz](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0412-fizz-buzz) |
+| [0453-minimum-moves-to-equal-array-elements](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
 | [3875-construct-uniform-parity-array-i](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3875-construct-uniform-parity-array-i) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3876-construct-uniform-parity-array-ii) |
