@@ -61,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1672-richest-customer-wealth](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1672-richest-customer-wealth) |
 | [1929-concatenation-of-array](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/1929-concatenation-of-array) |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3069-distribute-elements-into-two-arrays-i) |
+| [3105-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3105-longest-strictly-increasing-or-strictly-decreasing-subarray) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3718-smallest-missing-multiple-of-k) |
 | [3875-construct-uniform-parity-array-i](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3875-construct-uniform-parity-array-i) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/Prabhat1522/LPU_PEP_SUMMER_26_B2/tree/master/3876-construct-uniform-parity-array-ii) |
